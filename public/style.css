@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #121212; /* Dark background color for dark mode */
+    font-family: 'Roboto', sans-serif;
+}
+
+section.chat__section {
+    width: 800px;
+    max-width: 90%;
+    background: #1C1C1C; /* Darker background color for dark mode */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.brand {
+    padding: 20px;
+    background: #141414; /* Darker background color for the brand section */
+    display: flex;
+    align-items: center;
+}
+
+.brand h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #ffffff; /* Brownish text color for dark mode */
+    margin-left: 10px;
+}
+
+.message__area {
+    height: 500px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: #1C1C1C; /* Dark background color for text area */
+    color: #927239; /* Brownish text color for dark mode */
+}
+
+.message {
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    max-width: 300px;
+    position: relative;
+}
+
+.incoming {
+    background: #927239; /* Brown background color for incoming messages */
+    color: #fff; /* White text color for incoming messages */
+}
+
+.outgoing {
+    background: #AB8D59; /* Lighter brown background color for outgoing messages */
+    color: #1C1C1C; /* Dark text color for outgoing messages */
+    margin-left: auto;
+}
+
+.message h4 {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: #927239; /* Brownish text color for message headers */
+    font-size: 14px;
+}
+
+
+/* Existing CSS styles... */
+
+.brand h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #ffffff; /* Brownish text color for dark mode */
+    margin-left: 10px;
+    animation: pulse 1s ease-in-out infinite; /* Add the pulse animation */
+}
+
+/* Pulse animation keyframes */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Rest of your existing CSS styles... */
